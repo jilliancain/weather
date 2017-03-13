@@ -4,6 +4,23 @@ YOUR STYLES
 
 
 
+.temp {
+  color: red;
+}
+
+.city {
+  color: green;
+}
+
+.state {
+  color: blue;
+}
+
+.image img {
+  outline: 5px solid red;
+}
+
+
 
 /********************
 MEDIA QUERIES
