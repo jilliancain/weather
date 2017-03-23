@@ -1,7 +1,7 @@
 // YOUR SCRIPTS GO HERE
 
 $.simpleWeather({
-    location: 99216,
+    location:99202,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
@@ -129,4 +129,20 @@ $('#sidr-show-hide').sidr();
 $('#close').sidr({
   method: 'close'
 })
+
+
+
+
+navigator.geolocation.getCurrentPosition( 
+  
+  function(position) {
+  
+  // wait a few seconds to receive location
+  var lat = position.coords.latitude;
+  var long = position.coords.longitude;
+  
+  console.log( lat, long); 
+
+  
+});
 
