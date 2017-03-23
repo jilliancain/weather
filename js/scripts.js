@@ -1,12 +1,78 @@
 // YOUR SCRIPTS GO HERE
 
 $.simpleWeather({
+    location: 99216,
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+// Cheney
+$.simpleWeather({
     location: 99004,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
       console.log(weather);
       
+      // Display Data
+      $('#cheney .temp').text(weather.temp);
+      $('#cheney .city').text(weather.city);
+      $('#cheney img').attr('src', weather.image);
+      
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
+
+// Seattle
+$.simpleWeather({
+    location: 98105,
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('#seattle .temp').text(weather.temp);
+      $('#seattle .city').text(weather.city);
+      $('#seattle img').attr('src', weather.image);
+      
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
+
+// Ellensburg
+$.simpleWeather({
+    location: 98926,
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('#ellensburg .temp').text(weather.temp);
+      $('#ellensburg .city').text(weather.city);
+      $('#ellensburg img').attr('src', weather.image);
+      
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
+        
+        
+  
+        
       // Display Data
       $('.temp').text(weather.temp);
       $('.city').text(weather.city);
@@ -28,7 +94,9 @@ $.simpleWeather({
         $('body').addClass('sunny');
         
       }
-      
+    
+    
+    
        // If Cloudy `code` between 31 and 36       
       if (weather.code >= 26 && weather.code <= 30 ) {
         
@@ -52,6 +120,7 @@ $.simpleWeather({
   });
 
 
+
 //sidr
 
 $('#sidr-show-hide').sidr();
@@ -60,6 +129,4 @@ $('#sidr-show-hide').sidr();
 $('#close').sidr({
   method: 'close'
 })
-
-
 

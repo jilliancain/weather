@@ -4,12 +4,19 @@ YOUR STYLES
 
 
 
+h1 {color: lightblue;}
+
+h2 {color:aquamarine;
+font-size: 80px}
+
 .temp {
-  color: red;
+  color:mediumvioletred;
+    font-size:40px;
 }
 
 .city {
-  color: green;
+  color: navy;
+    font-size: 30px;
 }
 
 .state {
@@ -32,6 +39,9 @@ YOUR STYLES
 .rainy {
   background: blue;
 }
+
+
+
 
 
 
@@ -78,7 +88,7 @@ ICON IMAGES
 
 i {
   font-family: weather;
-  font-size: 3em;
+  font-size: 200px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
