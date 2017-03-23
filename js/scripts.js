@@ -1,7 +1,7 @@
 // YOUR SCRIPTS GO HERE
 
 $.simpleWeather({
-    location: 98004,
+    location: 99004,
     unit: 'f',
     success: function(weather) {
       // Entire weather object
