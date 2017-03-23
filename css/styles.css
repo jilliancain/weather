@@ -2,7 +2,8 @@
 YOUR STYLES
 *******************/
 
-
+body 
+{background-image:url("/img/weather.png")}
 
 h1 {color: lightblue;}
 
